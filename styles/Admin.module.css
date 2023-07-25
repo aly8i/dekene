@@ -1,0 +1,44 @@
+.container {
+  padding: 50px;
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+
+.nextBtn{
+  border: none;
+  background-color: orange;
+  border-radius: 10px;
+  color:var(--second-color);
+}
+.nextBtn:hover{
+    opacity: 90%;
+}
+.button {
+  border: none;
+  color: var(--second-color);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button:hover {
+  opacity: 90%;
+}
+
+.button:first-child {
+  background-color: teal;
+  margin-right: 10px;
+  
+}
+
+.button:last-child {
+  background-color: crimson;
+}

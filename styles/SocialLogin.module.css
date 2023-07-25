@@ -1,0 +1,282 @@
+.home {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--second-color);
+}
+
+.card {
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0px;
+}
+
+.desc {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.cardButton {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(53, 16, 102, 0.678);
+    padding: 10px;
+    color: var(--second-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--second-color);
+}
+
+.wrapper {
+    background-color: var(--second-color);
+    width: 60%;
+    height: 75%;
+    -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+.up{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+.down{
+    padding-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.or{
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    padding: 10px;
+    color: gray;
+    background-color: var(--second-color);
+    font-weight: bold;
+}
+
+.line{
+    width: 0.5px;
+    height: 70%;
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.loginButton{
+    width: 100px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.google{
+    background-color: #df4930;
+}
+.facebook{
+    background-color: #507cc0;
+}
+.github{
+    background-color: black;
+}
+.phone{
+    background-color: rgb(4, 216, 4);
+}
+.loginButton:hover{
+    border: 2px solid var(--second-color);
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.input{
+    width: 200px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--third-color);
+}
+.textarea{
+    width: 200px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.tel{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.phonebtn{
+    width:50px;
+    height:25px;
+    border-radius: 30px;
+    background-color: rgba(128, 0, 128, 0.671);
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--second-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify: center;
+    position: absolute;
+    border:none;
+    left: 215px;
+    top: 11px;
+    cursor:pointer;
+}
+.phonebtn:hover{
+    border: 2px solid var(--second-color);
+}
+.submit:hover{
+    border: 2px solid var(--second-color);
+}
+.submit{
+    width: 200px;
+    background-color: rgba(128, 0, 128, 0.671);
+    color: var(--second-color);
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.loginTitle{
+    position: absolute;
+    top: 115px;
+    right:50%;
+    transform: translate(50%);
+    background: linear-gradient(to right, red,rgb(4, 216, 4),rgb(50, 127, 153));
+    background-clip: text;
+    color: transparent;
+}
+
+.link{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        width: 65%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .loginTitle {
+        scale: 0.5;
+        transform: translate(119%,60%);
+        min-width: 600px;
+    }
+
+    .center {
+        width: 100%;
+        position: relative;
+    }
+
+    .left {
+        padding: 20px;
+    }
+
+    .right {
+        padding: 20px;
+    }
+    .up{
+        margin-top: 45px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+    .down{
+        padding-top: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px;
+    }
+    .line {
+        height: 0.5px;
+        width: 300px;
+    }
+    .loginButton{
+        scale:0.7;
+    }
+}
+@media screen and (max-width: 600px) {
+    .loginTitle {
+        scale:0.4;
+        transform: translate(149%,80%);
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .loginTitle {
+        scale:0.4;
+        transform: translate(147%,80%);
+    }
+    
+}

@@ -1,0 +1,89 @@
+.container{
+    width: 100%;
+    height: 50%;
+    background-color:red !important;
+}
+.copyright{
+    background-color: rgba(0, 0, 0, 0.025);
+    display: flex;
+    flex-direction: column;
+
+}
+.white{
+    background-color: var(--second-color) !important;
+}
+.facebook{
+    color:blue;
+}
+.facebook:hover{
+    color:darkblue;
+}
+.whatsapp{
+    color:lightgreen;
+}
+.whatsapp:hover{
+    color:darkgreen;
+}
+.twitter{
+    color:rgb(0, 183, 255);
+}
+.logo{
+    cursor: pointer;
+    /* -webkit-filter: grayscale(100%); Safari 6.0 - 9.0 */
+    /* filter: grayscale(100%); */
+    transition: cubic-bezier(.34,-0.02,.43,.97) 0.3s;
+}
+.logo:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+    scale: 1.2;
+}
+.twitter:hover{
+    color:blue;
+}
+.google{
+    color:red;
+}
+.google:hover{
+    color:darkred;
+}
+
+.instagram{
+    color: violet;
+}
+.instagram:hover{
+    color: purple;
+}
+
+.linkedin{
+    color:rgb(37, 53, 222);
+}
+.linkedin:hover{
+    color: darkblue;
+}
+.github{
+    color: black;
+}
+.github:hover{
+    color: grey;
+}
+
+.currency{
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)1s;
+    backface-visibility: hidden;
+}
+
+.currency:hover{
+    scale:1.1;
+}
+
+.currencyflipped1{
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+}
+
+.currencyflipped2{
+    transform: rotateY(360deg);
+    transition: transform 0.5s;
+}

@@ -1,0 +1,82 @@
+.container {
+  padding: 10px;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  cursor: pointer;
+  box-shadow: 0px 5px 12px 12px rgba(191,171,171,0.75);
+  -webkit-box-shadow: 0px 5px 12px 12px rgba(191,171,171,0.75);
+  -moz-box-shadow: 0px 5px 12px 12px rgba(191,171,171,0.75);
+  border-radius:  20px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.container:hover {
+  animation: shake 0.3s;
+}
+
+.image{
+  object-fit:fill;
+  border-radius: 15px;
+  min-height: auto;
+}
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--first-color);
+}
+
+.unit{
+  color: rgb(84, 81, 81);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.price {
+  font-family: "Lucida Console", "Courier New", monospace;
+  align-items: center;
+  font-size: 22px;
+  display:flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: black;
+}
+
+.desc {
+  min-height: 70px;
+  text-align: center;
+  text-justify: newspaper;
+  color: #777;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    scale: 0.9;
+  }
+  .image{
+    overflow: hidden;
+    height: 300;
+  }
+
+}

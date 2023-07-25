@@ -1,0 +1,30 @@
+.search{
+    width:100%;
+    box-shadow: 2px 2px 2px 2px rgba(194,194,194,0.75);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin: 10px 2px 2px 2px; 
+}
+
+.searchIcon{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.searchInput{
+    background-color: var(--second-color);
+    flex: 11;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    margin-left: 20px;
+}
+.searchInput:focus{
+    outline: none;
+}

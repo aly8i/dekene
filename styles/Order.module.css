@@ -1,0 +1,316 @@
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow-y: scroll;
+}
+.middle{
+  flex: 2;
+}
+.thead{
+  width:20%;
+  text-align: center;
+  gap:0;
+  border:2px solid var(--second-color);
+}
+.tbig{
+  width:40%;
+  text-align: center;
+  gap:0;
+  border:2px solid var(--second-color);
+}
+.printBtn{
+  background-color: var(--first-color);
+  width: 150px;
+  color: white;
+  align-self: flex-end;
+  border: none;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 7px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+}
+.printBtn:hover{
+  scale: 1.1;
+}
+.printBtn:active{
+  scale: 0.9;
+}
+.print{
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+.tsmall{
+  width:10%;
+  text-align: center;
+  gap:0;
+  border:2px solid var(--second-color);
+}
+.red{
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+.white{
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+.up {
+  flex: 2;
+}
+.down {
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 200px;
+  margin-right:200px;
+}
+.row{
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  top:0;
+  right:0;
+  bottom:0;
+  vertical-align: center;
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.cellWithStatus {
+  padding: 5px;
+  border-radius: 5px;
+}
+.cellWithStatus.active {
+  background-color: rgba(0, 128, 0, 0.05);
+  color: green;
+}
+.cellWithStatus.pending {
+  background-color: rgba(255, 217, 0, 0.05);
+  color: goldenrod;
+}
+.cellWithStatus.passive {
+  background-color: rgba(255, 0, 0, 0.05);
+  color: crimson;
+}
+.undone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none;
+}
+
+.right {
+  flex: 1;
+}
+
+.wrapper {
+  width: 90%;
+  max-height: 300px;
+  background-color: #333;
+  color: var(--second-color);
+  padding: 10px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  background-color: var(--second-color);
+  height: 30px;
+  color: teal;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1112px) {
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 70vh;
+  }
+  .thead{
+    width:20%;
+    text-align: center;
+    gap:0;
+    border:2px solid var(--second-color);
+  }
+  .tbig{
+    width:40%;
+    text-align: center;
+    gap:0;
+    border:2px solid var(--second-color);
+  }
+  .tsmall{
+    width:10%;
+    text-align: center;
+    gap:0;
+    border:2px solid var(--second-color);
+  }
+  .red{
+    background-color: var(--first-color);
+    color: var(--second-color);
+  }
+  .white{
+    background-color: var(--second-color);
+    color: var(--first-color);
+  }
+  .up {
+    flex: 2;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .middle{
+    flex: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+  .down {
+    flex-wrap: wrap;
+    width: 99%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 20px;
+    padding: 10px;
+    margin-right:20px;
+  }
+  .row{
+    flex-wrap: wrap;
+    padding: 0px;
+    justify-content: space-between;
+    top:0;
+    right:0;
+    bottom:0;
+    vertical-align: center;
+  }
+  
+  .done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgress 1s ease infinite alternate;
+  }
+  
+  @keyframes inProgress {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .cellWithStatus {
+    padding: 0px;
+    border-radius: 5px;
+  }
+  .cellWithStatus.active {
+    background-color: rgba(0, 128, 0, 0.05);
+    color: green;
+  }
+  .cellWithStatus.pending {
+    background-color: rgba(255, 217, 0, 0.05);
+    color: goldenrod;
+  }
+  .cellWithStatus.passive {
+    background-color: rgba(255, 0, 0, 0.05);
+    color: crimson;
+  }
+  .undone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.3;
+  }
+  
+  .undone .checkedIcon,
+  .inProgress .checkedIcon {
+    display: none;
+  }
+  
+  .right {
+    flex: 1;
+  }
+  
+  .wrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color: #333;
+    color: var(--second-color);
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .totalTextTitle {
+    margin-right: 10px;
+  }
+  
+  .button {
+    background-color: var(--second-color);
+    height: 30px;
+    color: teal;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: not-allowed;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header{
+    font-size: 15px !important;
+  }
+  .thead{
+    font-size: 11px;
+  }
+  .tbig{
+
+    font-size: 11px;
+  }
+  .tsmall{
+    font-size: 11px;
+  }
+
+ 
+}

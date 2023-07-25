@@ -1,0 +1,66 @@
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    background-color: var(--second-color);
+    padding-left: 32px;
+  }
+  
+  .banner .content {
+    min-width: 270px;
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  .banner img {
+    width: 170vw;
+    object-fit: cover;
+    fill:black;
+    clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .banner h1 {
+        color: var(--second-color);
+        text-shadow:
+            0 0 7px #b80006,
+            0 0 10px #b80006,
+            0 0 21px #b80006,
+            0 0 42px #ff2f35,
+            0 0 82px #ff2f35,
+            0 0 92px #ff2f35,
+            0 0 102px #ff2f35,
+            0 0 151px #ff2f35;
+            font-size: 30px;
+            font-family: "Vibur", sans-serif;
+            font-weight: 700;
+      }
+      
+  
+  .calltoaction {
+    line-break  : 100px;
+    font-weight: 700;
+  }
+  
+  .calltoaction:hover > i {
+    transform: translateX(6px);
+  }
+  
+  .calltoaction i {
+    line-break  : 100px;
+    transition: transform 150ms ease-in-out;
+    color: var(--second-color);
+    text-shadow:
+        0 0 7px #b80006,
+        0 0 10px #b80006,
+        0 0 21px #b80006,
+        0 0 42px #ff2f35,
+        0 0 82px #ff2f35,
+        0 0 92px #ff2f35,
+        0 0 102px #ff2f35,
+        0 0 151px #ff2f35;
+        font-size: 20px;
+        font-family: "Vibur", sans-serif;
+        font-weight: 700;
+        margin-left: 8px;
+  }

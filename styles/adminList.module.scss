@@ -1,0 +1,49 @@
+.list {
+  display: flex;
+  background-color: var(--second-color);
+  width: 100%;
+  padding-bottom: 40px;
+  .mobside{
+    display: none;
+    @media only screen  
+    and (max-width: 562px){
+      display: block;
+    }
+    .mobsideicon{
+      color: var(--first-color-s);
+      position: fixed;
+      font-size: 18px;
+      z-index: 400;
+      cursor: pointer;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    }
+    .mobsideicon:hover{
+      scale:1.5;
+    }
+    .mobsideicon:active{
+      scale:0.7;
+    }
+  }
+  @media only screen  
+  and (max-width: 562px){
+    flex-direction: column;
+  }
+  .side2{
+    @media only screen  
+    and (max-width: 562px){
+      position: fixed;
+      z-index: 300;
+      left: 0;
+    }
+  }
+  .side{
+    @media only screen 
+    and (max-width: 562px){
+      display: none;
+    }
+  }
+  .listContainer {
+    flex: 6;
+
+  }
+}

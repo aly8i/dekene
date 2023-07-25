@@ -1,0 +1,257 @@
+.container {
+  padding: 50px;
+  display: flex;
+  background-color: var(--second-color);
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.imgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.barcode{
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.td{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.cartImg {
+  width: 40vw;
+  height: 89vh;
+  position: relative;
+}
+.addQ{
+  color: green;
+  cursor: pointer;
+}
+.subQ{
+color:blue;
+cursor: pointer;
+}
+.xQ{
+  color:red;
+  cursor: pointer;
+}
+.emptyContainer{
+  background-color: var(--second-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+.backBtn{
+  border-radius: 25px;
+  width:60px;
+  height:30px;
+  background-color: var(--first-color);
+  z-index: 20;
+  position: absolute;
+  top:300px;
+  left:118px;
+  transform: translateX();
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow{
+  color: aliceblue;
+  justify-content: center;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  position: absolute;
+  align-items: center;
+  font-size: 22px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.name {
+  font-weight: 500;
+  color: var(--first-color);
+  font-size: 14px;
+}
+
+.total {
+  font-weight: 500;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.wrapper {
+  width: 90%;
+  z-index: 4;
+  background-color: var(--first-color);
+  max-height: 300px;
+  border-radius: 20px;
+  padding: 50px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--second-color);
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+.emptyWrapper{
+  color: var(--first-color);
+  width: 300px;
+  height:280px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.cartIcon{
+  font-size: 200px;
+}
+
+.message{
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 6;
+  color: var(--second-color);
+  top: 35px;
+  right: 40px;
+}
+
+.bubbleIcon{
+  font-size: 100px;
+  z-index: 5;
+  position: absolute;
+  top:5px;
+  right:25px;
+
+}
+.button {
+  height: 30px;
+  width:90%;
+  margin-left: 15px;
+  border-radius:20px;
+  border: 1px solid var(--second-color);
+  color: var(--first-color-s);
+  text-align: center;
+  font-size: small;
+  padding-top: 4px;
+  font-weight: light;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: var(--second-color);
+}
+@media screen and (max-width: 900px){
+  .cartImg {
+    width: 100vw;
+    height: 89vh;
+  }
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .imgContainer {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .name,
+  .total.size {
+    font-size: 14px;
+    scale: 0.3;
+  }
+
+  .extras{
+    font-size: 7px;
+  }
+  .extra{
+    font-size: 7px;
+  }
+
+  .price,
+  .quantity {
+    font-size: 14px;
+  }
+
+  .price::before {
+    content: "Price: ";
+    font-weight: 500;
+  }
+  .quantity::before {
+    content: "Quantity: ";
+    font-weight: 500;
+  }
+  .total::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payButton {
+  height: 30px;
+  width:90%;
+  margin-left: 15px;
+  border-radius:20px;
+  border: 1px solid var(--second-color);
+  color: var(--first-color-s);
+  text-align: center;
+  font-size: small;
+  padding-top: 4px;
+  font-weight: light;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: var(--second-color);
+}
+

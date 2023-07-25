@@ -1,0 +1,21 @@
+.container{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 500;
+    display: none;
+}
+.icon{
+    color:var(--first-color-s)!important;
+}
+.dial{
+    color:var(--second-color);
+    border-color: var(--second-color);
+    stroke: var(--second-color);
+}
+@media screen and (max-width: 1248px) {
+
+    .container{
+        display: block;
+    }
+}

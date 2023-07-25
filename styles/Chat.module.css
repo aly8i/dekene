@@ -1,0 +1,223 @@
+.searchContainer{
+    list-style: none;
+    width: fit-content;
+    height:65px;
+    scale: 0.85;
+    border-radius:50px;
+    background:var(--second-color);
+    box-shadow:0px 5px 20px var(--first-color);
+    list-style-type: none;
+    position: fixed;
+    left: 30px;
+    bottom: 15px; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 800;
+    transition: 0.8s;
+    gap:10px;
+}
+.searchContainer:hover{
+    box-shadow:0px 5px 40px var(--first-color);
+}
+.chatContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    position: relative;
+}
+@media only screen  
+and (max-width: 484px){
+    .chat{
+        scale:0.7;
+        margin-left: -30px;
+    }
+}
+@media only screen  
+and (max-width: 434px){
+    .chat{
+        scale:0.6;
+        margin-left: -50px;
+    }
+}
+@media only screen  
+and (max-width: 382px){
+    .chat{
+        margin-left: -80px;
+    }
+}
+.input{
+    box-shadow: 0px 0px 5px 5px rgba(219,214,214,0.51);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(219,214,214,0.51);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(219,214,214,0.51);
+    border-radius: 12px;
+    border: none;
+    padding-left: 10px;
+    /* background-color: aqua; */
+    width: 100%;
+}
+.input:focus{
+    outline: none
+}
+.inputContainer{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    gap:40px;
+}
+.progressContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.last{
+    min-height: 1px;
+    width: 10px;
+    position: relative;
+    width: fit-content;
+    gap:10px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.messages{
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.message{
+    display: flex;
+    flex-direction: row;
+    word-break: break-all;
+    color: white;
+}
+.message a:hover{
+    text-decoration: none !important;
+    color:white;
+}
+.sendIcon{
+    color:white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    font-size: 18px;
+}
+.closeIcon{
+    color: var(--fourth-color);
+    font-size: 18px;
+}
+.sentAnchor{
+    rotate: 45deg;
+    position: absolute;
+    bottom:-30px;
+    left:-20px;
+    width: 30px;
+    height: 50px;
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+    background-color: var(--first-color-s);
+    z-index: -12;
+}
+.recievedAnchor{
+    rotate: -45deg;
+    position: absolute;
+    bottom:-30px;
+    right:-20px;
+    width: 30px;
+    height: 50px;
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+    background-color: var(--);
+    z-index: -12;
+}
+.send{
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--first-color-s);
+    border-radius: 50%;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    flex-direction: row;
+}
+.send:hover{
+    scale:1.1;
+}
+.close{
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.sent{
+    position: relative;
+    width: fit-content;
+    gap:10px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--first-color-s);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.recieved{
+    position: relative;
+    align-self: flex-end;
+    width: fit-content;
+    gap:10px;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time{
+    position: relative;
+    bottom: -6px;
+    font-size: smaller;
+}
+.icon{
+    color: var(--first-color-s);
+}
+.chat{
+    width: 500px !important;
+    height: 500px !important;
+    left: -5px !important;
+    bottom: 45px !important;
+}
+
+.messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.searchContainer .searchInput{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color:  var(--first-color);
+    transition: 0.8s;
+
+}
