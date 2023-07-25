@@ -98,7 +98,7 @@ const Cart=({mapLocation,deliveryChargePerKm})=> {
         address = "in store"
       }
       else{
-        name = user?.username || "user"
+        name = user?.username || "customer"
         address = user?.address|| "outside"
       }
       await createOrder({ name, total:cart.total, products,location,customerID:user?.id,phoneNumber:"+961",address, deliveryCharge:0 });
