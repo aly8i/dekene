@@ -98,7 +98,7 @@ const Navbar = () => {
       </div>
       {loading==true?(<div className={styles.item}><Pulse/></div>):(
       <div className={styles.item}>
-        {user.id?(<Link href={`/user/${user.id}`} passHref>
+        {user?.fullname=="dekene jaafar"?(<Link href={"/admin}"} passHref>
           <motion.div whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}} className={styles.profilewrapper}>
           {user.username!="Guest"?<Image className={styles.avatar} src={user.img} alt="user" width={30} height={30} />:<AccountCircleIcon className={styles.avatar}/>}
           </motion.div>
@@ -107,8 +107,8 @@ const Navbar = () => {
           {user.username!="Guest"?<Image className={styles.avatar} src={user.img} alt="user" width={30} height={30} />:<Link href="/socialogin" passHref><AccountCircleIcon className={styles.avatar}/></Link>}
           </div>)
         }
-          <Link href={`/user/${user.id}`} passHref><motion.div className={styles.username} whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}>{user.username!="Guest"?user.username:""}</motion.div></Link>
-          {user.username=="Guest"?(
+          <Link href={"/admin"} passHref><motion.div className={styles.username} whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}>{user.username!="Guest"?user.username:""}</motion.div></Link>
+          {user.username=="dekene jaafar"?(
           <Link href="/socialogin" passHref>
             <motion.div className={styles.logout} whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}>
               Login
